@@ -4,13 +4,74 @@
     <title>Churn.io</title>
     <%= csrf_meta_tags %>
     <link href="//fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="css/simple-sidebar.css" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </head>
 
   <body>
-    <div class="container">
-      <%= yield %>
-    </div>
+    <div id="wrapper">
+    <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="/">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href=""><i class="fa fa-upload"></i>&nbsp; Import</a>
+                </li>
+                <li>
+                    <a href="/about"><i class="fa fa-cog"></i>&nbsp; About</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-pencil-square-o"></i>&nbsp; Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        
+        <!-- Page Content -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+                <a class="navbar-brand title-brand" href="#menu-toggle" id="menu-toggle">Churn.io</a>
+            </div>
+        
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+        <div class="container">
+          <%= yield %>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        
+      </div>
+    <!-- /#wrapper -->
+    
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
   </body>
 </html>

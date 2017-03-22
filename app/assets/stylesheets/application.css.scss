@@ -17,6 +17,9 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
-h1, h2, h3 {
+h1, h2, h3, .title-brand {
   font-family: 'Pacifico', cursive;
 }
+
+/* Adds padding for the fixed nav bar on top so content doesn't overlay */
+body { padding-top: 50px; }
