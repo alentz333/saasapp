@@ -17,9 +17,51 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
-h1, h2, h3, .title-brand {
+.title {
   font-family: 'Pacifico', cursive;
+  color: #ffffff;
+  font-size: 150px;
 }
 
-/* Adds padding for the fixed nav bar on top so content doesn't overlay */
-body { padding-top: 50px; }
+.callout {
+  font-family: 'Pacifico', cursive;
+  color: #ffffff;
+}
+
+.home-title {
+  text-align: center;
+  left: 0;
+  line-height: 200px;
+  margin: auto;
+  margin-top: -100px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.title-brand {
+  font-family: 'Pacifico', cursive;
+  font-size: 25px;
+  color: #000000;
+}
+
+.navbar-default {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: #090909 ;
+}
+
+.navbar-brand {
+  color: #090909;
+}
+
+
+body { 
+  /* Adds padding for the fixed nav bar on top so content doesn't overlay */
+  padding-top: 50px;
+  /* background gradient uigradient.com */
+  background: #41295a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #41295a , #2F0743); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #41295a , #2F0743); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+}
