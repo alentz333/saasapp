@@ -4,7 +4,8 @@
     <title>Churn.io</title>
     <%= csrf_meta_tags %>
     <link href="//fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/simple-sidebar.css.scss" rel="stylesheet">
+    <link href="css/bootstrap_and_overrides.css.scss" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
@@ -16,15 +17,10 @@
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
-                    <a href="/">
-                        Home
-                    </a>
+                    <%= link_to "Home", root_path %>
                 </li>
                 <li>
                     <a href=""><i class="fa fa-upload"></i>&nbsp; Import</a>
-                </li>
-                <li>
-                    <a href="/about"><i class="fa fa-cog"></i>&nbsp; About</a>
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-pencil-square-o"></i>&nbsp; Contact</a>
@@ -44,11 +40,32 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-                <a class="navbar-brand title-brand" href="#menu-toggle" id="menu-toggle">Churn.io</a>
+                <a class="navbar-brand title-brand" href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars"></i></a>
+                <%= link_to root_path, class: "navbar-brand title-brand" do %>
+                  Churn.io
+                <% end %>
             </div>
+           
         
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <%= link_to about_path do %>
+                    About
+                  <% end %>
+                </li>
+                <li>
+                  <%= link_to about_path do %>
+                    Contact Us
+                  <% end %>
+                </li>
+                <li>
+                  <%= link_to about_path do %>
+                    Login
+                  <% end %>
+                </li>
+              </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>

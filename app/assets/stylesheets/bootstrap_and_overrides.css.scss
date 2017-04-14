@@ -1,0 +1,52 @@
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+/* Include overrides here if you want to override the style */
+body {
+  /* Filter should go here */
+  background: #182848;
+}
+
+.about-page {
+  margin-top: 70px;
+  color: #ffffff;
+  text-align: center;
+  
+}
+
+.title {
+  font-size: 150px;
+}
+
+
+.home-title {
+  font-family: 'Pacifico', cursive;
+  color: #ffffff;
+  text-align: center;
+  left: 0;
+  line-height: 200px;
+  margin: auto;
+  margin-top: -100px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.title-brand {
+  font-family: 'Pacifico', cursive;
+  font-size: 25px;
+  color: #090909;
+}
+
+.navbar-default {
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+.navbar-default .navbar-brand {
+  color: #090909
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #090909;
+  font-weight: bold;
+}
