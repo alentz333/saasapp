@@ -1,10 +1,9 @@
-<body>
+<body class="bg-color">
   <div class="container new-page">
     <div class="row">
-      <h3 class="text-center">Contact Us</h3>
-      
       <div class="col-md-4 col-md-offset-4">
-        <div class="well">
+        <div class = 'well'>
+          <h2 class="text-center form-title">Contact Us</h2>
           <%= form_for @contact do |f| %>
           <div class="form-group">
             <%= f.label :name %>
@@ -18,7 +17,7 @@
             <%= f.label :comments %>
             <%= f.text_area :comments, class: 'form-control' %>
           </div>
-            <%= f.submit 'Submit', class: 'btn btn-default' %>
+            <%= f.submit 'Submit', class: 'btn btn-success' %>
           <% end %>
         </div>
       </div>
