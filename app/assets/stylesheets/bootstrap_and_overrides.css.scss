@@ -2,9 +2,18 @@
 @import 'bootstrap';
 /* Include overrides here if you want to override the style */
 
+.home-background-image { 
+  background: url(https://static.pexels.com/photos/27665/pexels-photo-27665.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .bg-color {
   /* Filter should go here */
-  background: #182848;
+  background-color: #182848;
+  
 }
 
 .page-container {
@@ -12,30 +21,39 @@
 }
 
 .about-page {
-  // margin-top: 70px;
   color: #ffffff;
   text-align: center;
-}
-
-.new-page {
-  // margin-top: 70px;
 }
 
 .title {
   font-size: 150px;
 }
 
-
-.home-title {
+.font-cursive {
   font-family: 'Pacifico', cursive;
+}
+.home-title {
   color: #ffffff;
+  text-align: center;
+  left: 0;
+  line-height: 200px;
+  margin: auto;
+  margin-top: -150px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.home-signup-links {
+  /*font-family: 'Pacifico', cursive;*/
+  color: black;
   text-align: center;
   left: 0;
   line-height: 200px;
   margin: auto;
   margin-top: -100px;
   position: absolute;
-  top: 50%;
+  top: 80%;
   width: 100%;
 }
 

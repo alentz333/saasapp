@@ -1,7 +1,23 @@
-<body class="bg-color">
-  <div class="home-title">
+<body class="bg-color home-background-image">
+  <div class="home-title font-cursive">
       <h1 class="title">Churn.io</h1>
       <h2 class="callout">Data hygiene, delivered.</h2>
+  </div>
+  <div class="container home-signup-links">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="well">
+          <h2 class="text-center font-cursive">Basic Membership</h2>
+          <%= link_to "Sign up with Basic", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-lg btn-block' %>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="well">
+          <h2 class="text-center font-cursive">Pro Membership</h2>
+          <%= link_to "Sign up with Pro", new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-success btn-lg btn-block' %>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 
