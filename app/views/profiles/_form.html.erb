@@ -8,6 +8,10 @@
     <%= f.text_field :last_name, class: 'form-control' %>
   </div>
   <div class="form-group">
+    <%= f.label :company %>
+    <%= f.text_field :company, class: 'form-control' %>
+  </div>
+  <div class="form-group">
     <%= f.label :job_title %>
     <%= f.select :job_title, ['Sales', 'Marketing', 'IT'], {}, class: 'form-control' %>
   </div>
