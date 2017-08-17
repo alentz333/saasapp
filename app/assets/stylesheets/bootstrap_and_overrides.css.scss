@@ -14,19 +14,19 @@
   /* Filter should go here */
   background-color: #182848;
   background-size: cover;
-  
 }
 
 .flash-container {
   position: absolute;
   width: 100%;
 }
-.alert-notice, .alert-alert {
+
+.alert {
   text-align: center;
   color: #ffffff;
   background: rgba(255, 255, 255, 0.3);
   border-color: rgba(255, 255, 255, 0.5);
-  margin-top: -14px;
+  margin-top: -60px;
 }
 
 .about-page {
@@ -36,7 +36,7 @@
 }
 
 .new-page {
-  margin-top: 70px;
+  margin-top: 120px;
 }
 
 .title {
@@ -60,7 +60,6 @@
 }
 
 .home-signup-links {
-  /*font-family: 'Pacifico', cursive;*/
   color: black;
   text-align: center;
   left: 0;
@@ -78,21 +77,23 @@
   color: #090909;
 }
 
-/*.navbar-default {
-  background-color: #ffffff;
-  border-color: #ffffff;
-}*/
-
 .navbar-default .navbar-brand {
   color: #090909
 }
 
-/*.navbar-default .navbar-nav > li > a {
+ nav .navbar-nav {
   color: #090909;
   font-weight: bold;
-}*/
+}
 
-.navbar-nav {
-  color: #090909;
-  font-weight: bold;
+.navbar-right {
+  height: 50px;
+}
+
+.dropdown {
+  height: 50px;
+}
+
+.dropdown-toggle {
+  top: -5px;
 }
